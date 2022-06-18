@@ -1,0 +1,13 @@
+.border {
+    align-content: center;
+    text-align: center;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+}
+
+.slider {
+    width: 100%;
+}

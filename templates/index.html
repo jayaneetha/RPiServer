@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+    <title>RPi Controller</title>
+</head>
+<body>
+<div class="header">
+    <h4>RPi Controller</h4>
+</div>
+<div class="container">
+    <table>
+        <tbody>
+        <tr>
+            <td></td>
+            <td class="border">
+                <button id="btnF">Forward</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="border">
+                <button id="btnL">Left</button>
+            </td>
+            <td class="border">
+                <button id="btnS">Stop</button>
+            </td>
+            <td class="border">
+                <button id="btnR">Right</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="border">
+                <button id="btnB">Backward</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <label for="speed" id="lblSpeed">Speed : 25</label>
+                <input class="slider" id="speed" max="100" min="25" type="range" value="25">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="{{  url_for('static', path='/app.js') }}"></script>
+</body>
+</html>
